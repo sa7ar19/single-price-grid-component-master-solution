@@ -1,0 +1,130 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: initial;
+}
+body{
+    background-color: #e4ecf4;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Karla', sans-serif;
+}
+main{
+    width: 600px;
+    top: 18vh;
+    margin-left: auto ;
+    margin-right: auto;
+    position: relative;
+    height: 450px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35) ; 
+
+}
+ul{
+    padding-left: 0;
+    opacity: 70%;
+}
+li{
+    margin: 0;
+    list-style: none;
+    
+}
+h2{
+    color: #26b2a7;
+    margin: 0;
+}
+.cont{
+    background-color: #fdfdfd;
+    height: 45%;
+    color: #98a6bd;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding:30px ;
+
+}
+h4{
+    color: #c0da30;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+
+}
+.cont p {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 0 ;
+}
+.content{
+    font-size: 1em;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.leftD{
+    background-color: #26b2a7;
+}
+.rigthD {
+    background-color: #46bdb4;
+}
+.leftD , .rigthD {
+    flex-basis: 50%;
+    padding: 25px;
+    padding-top: 10px;
+}
+.price{
+    display: inline;
+    font-size: 30px;
+    margin: 4px;
+    padding-left: 0;
+}
+span{
+    color: rgba(255, 255, 255, 0.393);
+}
+.btn {
+    width: 95%;
+    font-size: 15px;
+    height: 40px;
+    color: white;
+    background-color: #c0da30;
+    border-radius: 5px;  
+    border: none;
+
+}
+.btn:hover{
+    background-color: rgb(104, 177, 35);
+    cursor: pointer;
+}
+p{
+    margin: 0;
+    padding: 18px;
+    padding-left: 0;
+}
+
+@media (max-width: 650px){
+    main{
+        width: 100%;
+        top: 2vh;
+        height: 700px;
+    }
+    .content{
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+    }
+    .rigthD, .leftD {
+        width: 100%;
+        height: 45%;
+    }
+    .btn{
+        width: 40%;
+        margin-top: 15px;
+    }
+ 
+}
